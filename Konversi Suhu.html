@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale = 1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <title> Konversi Suhu</title>
+    <script type="text/javascript">
+        celciusf = () => {
+            let celcius1 = document.getElementById('celcius1').value;
+            let hasil1 = 9 / 5 * celcius1 + 32;
+            document.getElementById('hasil1').value = hasil1;
+        }
+        celciusr = () => {
+            let celcius2 = document.getElementById('celcius2').value;
+            let hasil2 = 4 / 5 * celcius2;
+            document.getElementById('hasil2').value = hasil2;
+        }
+        celciusk = () => {
+            let celcius3 = document.getElementById('celcius3').value;
+            let hasil3 = 5 / 5 * celcius3 + 273;
+            document.getElementById('hasil3').value = hasil3;
+        }
+        reamurf = () => {
+            let reamur1 = document.getElementById('reamur1').value;
+            let hasil4 = 9 / 4 * reamur1 + 32;
+            document.getElementById('hasil4').value = hasil4;
+        }
+        reamurc = () => {
+            let reamur2 = document.getElementById('reamur2').value;
+            let hasil5 = 5 / 4 * reamur2;
+            document.getElementById('hasil5').value = hasil5;
+        }
+        reamurk = () => {
+            let reamur3 = document.getElementById('reamur3').value;
+            let hasil6 = 5 / 4 * reamur3 + 273;
+            document.getElementById('hasil6').value = hasil6;
+        }
+        fahrenheitc = () => {
+            let fahrenheit1 = document.getElementById('fahrenheit1').value;
+            let hasil7 = 5 / 9 * fahrenheit1 - 32;
+            document.getElementById('hasil7').value = hasil7;
+        }
+        fahrenheitr = () => {
+            let fahrenheit2 = document.getElementById('fahrenheit2').value;
+            let hasil8 = 4 / 9 * fahrenheit2 - 32;
+            document.getElementById('hasil8').value = hasil8;
+        }
+        fahrenheitk = () => {
+            let fahrenheit3 = document.getElementById('fahrenheit3').value;
+            let hasil9 = 5 / 9 * fahrenheit3 + 273 - 32;
+            document.getElementById('hasil9').value = hasil9;
+        }
+        kelvinf = () => {
+            let kelvin1 = document.getElementById('kelvin1').value;
+            let hasil10 = 9 / 5 * kelvin1 - 32 - 273;
+            document.getElementById('hasil10').value = hasil10;
+        }
+        kelvinr = () => {
+            let kelvin2 = document.getElementById('kelvin2').value;
+            let hasil11 = 5 / 4 * kelvin2 - 273;
+            document.getElementById('hasil11').value = hasil11;
+        }
+        kelvinc = () => {
+            let kelvin3 = document.getElementById('kelvin3').value;
+            let hasil12 = 5 / 5 * kelvin3 - 273;
+            document.getElementById('hasil12').value = hasil12;
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="card col-sm-6">
+                <div class="card-header bg-primary text-white">
+                    <h3>Konversi Celcius</h3>
+                </div>
+                <div class="card-body">
+                    Input Celcius
+                    <input type="number" id="celcius1" class="form-control">
+                    <button type="button" class="btn btn-danger btn-block" onclick="celciusf()">Celcius ke
+                        Fahrenheit</button>
+                    <input type="text" id="hasil1" class="form-control" readonly>
+                    Input Celcius
+                    <input type="number" id="celcius2" class="form-control">
+                    <button type="button" class="btn btn-warning btn-block" onclick="celciusr()">Celcius ke
+                        Reamur</button>
+                    <input type="text" id="hasil2" class="form-control" readonly>
+                    Input Celcius
+                    <input type="number" id="celcius3" class="form-control">
+                    <button type="button" class="btn btn-success btn-block" onclick="celciusk()">Celcius ke
+                        Kelvin</button>
+                    <input type="text" id="hasil3" class="form-control" readonly>
+                </div>
+                <div class="col-6 footer">
+                    &copy; Copyright by DAM
+
+                </div>
+            </div>
+            <div class="card col-sm-6">
+                <div class="card-header bg-success text-white">
+                    <h3>Konversi Reamur</h3>
+
+                </div>
+                <div class="card-body">
+                    Input Reamur
+                    <input type="number" id="reamur1" class="form-control">
+                    <button type="button" class="btn btn-warning btn-block" onclick="reamurf()">Reamur ke
+                        Fahrenheit</button>
+                    <input type="text" id="hasil4" class="form-control" readonly>
+                    Input Reamur
+                    <input type="number" id="reamur2" class="form-control">
+                    <button type="button" class="btn btn-primary btn-block" onclick="reamurc()">Reamur ke
+                        Celcius</button>
+                    <input type="text" id="hasil5" class="form-control" readonly>
+                    Input Reamur
+                    <input type="number" id="reamur3" class="form-control">
+                    <button type="button" class="btn btn-danger btn-block" onclick="reamurk()">Reamur ke Kelvin</button>
+                    <input type="text" id="hasil6" class="form-control" readonly>
+                </div>
+                <div class="col-6 footer">
+                    &copy; Copyright by DAM
+                </div>
+
+            </div>
+            <br>
+
+            <div class="card col-sm-6">
+                <div class="card-header bg-warning text-white">
+                    <h3>Konversi Fahrenheit</h3>
+
+                </div>
+                <div class="card-body">
+                    Input Fahrenheit
+                    <input type="number" id="fahrenheit1" class="form-control">
+                    <button type="button" class="btn btn-success btn-block" onclick="fahrenheitc()">Fahrenheit ke
+                        Celcius</button>
+                    <input type="text" id="hasil7" class="form-control" readonly>
+                    Input Fahrenheit
+                    <input type="number" id="fahrenheit2" class="form-control">
+                    <button type="button" class="btn btn-danger btn-block" onclick="fahrenheitr()">Fahrenheit ke
+                        Reamur</button>
+                    <input type="text" id="hasil8" class="form-control" readonly>
+                    Input Fahrenheit
+                    <input type="number" id="fahrenheit3" class="form-control">
+                    <button type="button" class="btn btn-primary btn-block" onclick="fahrenheitk()">Fahrenheit ke
+                        Kelvin</button>
+                    <input type="text" id="hasil9" class="form-control" readonly>
+                </div>
+                <div class="col-6 footer">
+                    &copy; Copyright by DAM
+                </div>
+
+            </div>
+            <div class="card col-sm-6">
+                <div class="card-header bg-danger text-white">
+                    <h3>Konversi Kelvin</h3>
+
+                </div>
+                <div class="card-body">
+                    Input Kelvin
+                    <input type="number" id="kelvin1" class="form-control">
+                    <button type="button" class="btn btn-primary btn-block" onclick="kelvinf()">Kelvin ke
+                        Fahrenheit</button>
+                    <input type="text" id="hasil10" class="form-control" readonly>
+                    Input Kelvin
+                    <input type="number" id="kelvin2" class="form-control">
+                    <button type="button" class="btn btn-success btn-block" onclick="kelvinr()">Kelvin ke
+                        Reamur</button>
+                    <input type="text" id="hasil11" class="form-control" readonly>
+                    Input Kelvin
+                    <input type="number" id="kelvin3" class="form-control">
+                    <button type="button" class="btn btn-warning btn-block" onclick="kelvinc()">Kelvin ke
+                        Celcius</button>
+                    <input type="text" id="hasil12" class="form-control" readonly>
+                </div>
+                <div class="col-6 footer">
+                    &copy; Copyright by DAM
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
